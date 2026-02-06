@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 PulseRemit: AI-Powered Remittance Hub
 
-## Getting Started
+PulseRemit is a next-generation, agentic remittance platform designed to automate global wealth movements. Leveraging autonomous AI agents, PulseRemit eliminates the friction of cross-border transfers while providing institutional-grade volatility protection.
 
-First, run the development server:
+## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🤖 Guardian Agents**: Deploy autonomous agents to handle repetitive transfers, scheduled payments, and complex financial logic via natural language.
+- **🛡️ Volatility Shield**: Built-in intelligent hedging that detects currency devaluation in emerging markets and preserves value automatically.
+- **🛰️ Global Connectivity**: Live tracking of wealth corridors (e.g., USA → NGN) with optimized routing via LI.FI and Circle Arc.
+- **💎 Premium UX**: High-contrast, futuristic design inspired by modern fintech leaders, fully responsive for web and mobile.
+- **🔗 ENS First**: Human-readable identities. No more copying long hex addresses; send wealth to `name.ens`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Frontend**: Next.js 15 (App Router), React 19, Tailwind CSS 4.0
+- **AI Engine**: Gemini 1.5 Flash (via Google Generative AI SDK)
+- **Web3**: RainbowKit, Wagmi, Viem (EVM compatible)
+- **Animations**: Framer Motion, Three.js (React Three Fiber)
+- **Charts**: Recharts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/ETHGlobal-Hackathon/PulseRemit.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Configure Environment:**
+   Copy `.env.example` to `.env.local` and add your `NEXT_PUBLIC_GEMINI_API_KEY`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Run Dev Mode:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+## 🧑‍💻 For Developers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Smart Contracts
+PulseRemit is designed to interface with:
+- **ERC-20**: Primary focus on USDC/EURC stablecoins.
+- **LI.FI**: Multichain bridging and swapping logic.
+- **ENS**: Resolution of user identities.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Project Structure
+- `src/services/ai.ts`: The logic-parsing engine for agent configuration.
+- `src/components/shared`: Reusable high-fidelity UI components.
+- `src/app/dashboard`: Integrated hub flows (Agents, History, Analytics, Flows).
+
+## 📄 License
+MIT

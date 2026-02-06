@@ -9,7 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@google/genai": "^1.40.0",
     "@google/generative-ai": "^0.24.1",
     "@rainbow-me/rainbowkit": "^2.2.10",
     "@react-three/drei": "^10.7.7",
